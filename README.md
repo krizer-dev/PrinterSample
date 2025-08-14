@@ -16,8 +16,16 @@
 - QR 코드 출력
 - 이미지 출력
 
-## 🛠 프린터 연결 설정
+## 🛠 프린터 RS232 연결 정보
 
-RS232
+RK3288
+- port - dev/ttysS3
+- baudrate - 38400
+
+RK3399
 - port - dev/ttysWK1
+- baudrate - 38400
+
+RK3568
+- port - dev/ttyS0
 - baudrate - 38400
