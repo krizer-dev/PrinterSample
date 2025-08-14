@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krizer.sample.printer.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/portSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <Spinner
+            android:id="@+id/baudrateSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="connect"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/funcLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLayout">
+
+        <Button
+            android:id="@+id/btnPrintString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Text" />
+
+        <Button
+            android:id="@+id/btnPrintBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Barcode" />
+
+        <Button
+            android:id="@+id/btnPrintQRcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print QR code" />
+
+        <Button
+            android:id="@+id/btnPrintImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Image" />
+
+        <Button
+            android:id="@+id/btnPrintFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Feed" />
+
+        <Button
+            android:id="@+id/btnHalfCut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HalfCut" />
+        <Button
+            android:id="@+id/btnFullCut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FullCut" />
+
+        <Button
+            android:id="@+id/btnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Printer Status" />
+
+        <Button
+            android:id="@+id/btnDisconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disconnect" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
